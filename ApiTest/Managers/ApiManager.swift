@@ -23,9 +23,11 @@ class ApiManager: ObservableObject {
         do {
             // START A URL SESSION TO GET DATA
             let (data, _) = try await URLSession.shared.data(from: url)
-            
+            print(data)
             // DECODE THE DATA TO BE ABLE TO MAKE SENSE OF IT IN JSON
-            
+            if let decodedResponse = try? JSONDecoder().decode([HypeStock].self, from: data) {
+                print(decodedResponse)
+            }
         }
         catch {
             print("Invalid data")

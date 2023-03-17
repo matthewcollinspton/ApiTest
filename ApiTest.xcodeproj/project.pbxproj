@@ -15,6 +15,8 @@
 		3E863E9229C5020E00C01946 /* ApiTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E863E9129C5020E00C01946 /* ApiTestUITests.swift */; };
 		3E863E9429C5020E00C01946 /* ApiTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E863E9329C5020E00C01946 /* ApiTestUITestsLaunchTests.swift */; };
 		3E863EA129C503F600C01946 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E863EA029C503F600C01946 /* ApiManager.swift */; };
+		3E863EA629C5084500C01946 /* HypeStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E863EA529C5084500C01946 /* HypeStock.swift */; };
+		3E863EA929C5161F00C01946 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E863EA829C5161F00C01946 /* StateController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		3E863E9129C5020E00C01946 /* ApiTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTestUITests.swift; sourceTree = "<group>"; };
 		3E863E9329C5020E00C01946 /* ApiTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3E863EA029C503F600C01946 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		3E863EA529C5084500C01946 /* HypeStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeStock.swift; sourceTree = "<group>"; };
+		3E863EA829C5161F00C01946 /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +100,12 @@
 		3E863E7529C5020E00C01946 /* ApiTest */ = {
 			isa = PBXGroup;
 			children = (
+				3E863EA729C5160900C01946 /* Managers */,
+				3E863EA229C507F700C01946 /* Model */,
 				3E863E7629C5020E00C01946 /* ApiTestApp.swift */,
 				3E863E7829C5020E00C01946 /* ContentView.swift */,
 				3E863E7A29C5020E00C01946 /* Assets.xcassets */,
 				3E863E7C29C5020E00C01946 /* Preview Content */,
-				3E863EA029C503F600C01946 /* ApiManager.swift */,
 			);
 			path = ApiTest;
 			sourceTree = "<group>";
@@ -128,6 +133,23 @@
 				3E863E9329C5020E00C01946 /* ApiTestUITestsLaunchTests.swift */,
 			);
 			path = ApiTestUITests;
+			sourceTree = "<group>";
+		};
+		3E863EA229C507F700C01946 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E863EA529C5084500C01946 /* HypeStock.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E863EA729C5160900C01946 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3E863EA029C503F600C01946 /* ApiManager.swift */,
+				3E863EA829C5161F00C01946 /* StateController.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +284,9 @@
 			files = (
 				3E863E7929C5020E00C01946 /* ContentView.swift in Sources */,
 				3E863EA129C503F600C01946 /* ApiManager.swift in Sources */,
+				3E863EA629C5084500C01946 /* HypeStock.swift in Sources */,
 				3E863E7729C5020E00C01946 /* ApiTestApp.swift in Sources */,
+				3E863EA929C5161F00C01946 /* StateController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
