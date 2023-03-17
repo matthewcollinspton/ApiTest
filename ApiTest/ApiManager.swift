@@ -7,7 +7,10 @@
 
 import Foundation
 
-class ApiManager {
+class ApiManager: ObservableObject {
+    
+    init() {
+    }
     
     func getData() async {
         
@@ -20,7 +23,6 @@ class ApiManager {
         do {
             // START A URL SESSION TO GET DATA
             let (data, _) = try await URLSession.shared.data(from: url)
-            print(data)
             
             // DECODE THE DATA TO BE ABLE TO MAKE SENSE OF IT IN JSON
             

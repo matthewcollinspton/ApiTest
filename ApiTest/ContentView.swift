@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var apiManager = ApiManager()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button("Tap for data") {
+                Task {
+                    await apiManager.getData()
+                }
+            }
         }
         .padding()
     }
