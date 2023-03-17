@@ -14,6 +14,7 @@
 		3E863E8829C5020E00C01946 /* ApiTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E863E8729C5020E00C01946 /* ApiTestTests.swift */; };
 		3E863E9229C5020E00C01946 /* ApiTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E863E9129C5020E00C01946 /* ApiTestUITests.swift */; };
 		3E863E9429C5020E00C01946 /* ApiTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E863E9329C5020E00C01946 /* ApiTestUITestsLaunchTests.swift */; };
+		3E863EA129C503F600C01946 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E863EA029C503F600C01946 /* ApiManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		3E863E8D29C5020E00C01946 /* ApiTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApiTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E863E9129C5020E00C01946 /* ApiTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTestUITests.swift; sourceTree = "<group>"; };
 		3E863E9329C5020E00C01946 /* ApiTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3E863EA029C503F600C01946 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				3E863E7829C5020E00C01946 /* ContentView.swift */,
 				3E863E7A29C5020E00C01946 /* Assets.xcassets */,
 				3E863E7C29C5020E00C01946 /* Preview Content */,
+				3E863EA029C503F600C01946 /* ApiManager.swift */,
 			);
 			path = ApiTest;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E863E7929C5020E00C01946 /* ContentView.swift in Sources */,
+				3E863EA129C503F600C01946 /* ApiManager.swift in Sources */,
 				3E863E7729C5020E00C01946 /* ApiTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
