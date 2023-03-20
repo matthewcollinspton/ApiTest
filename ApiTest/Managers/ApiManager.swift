@@ -9,7 +9,10 @@ import Foundation
 
 class ApiManager: ObservableObject {
     
+    @Published var firstStock: HypeStock?
+    
     init() {
+        firstStock = nil
     }
     
     func getData() async {
@@ -24,9 +27,14 @@ class ApiManager: ObservableObject {
             // START A URL SESSION TO GET DATA
             let (data, _) = try await URLSession.shared.data(from: url)
 
+            try await Task.sleep(nanoseconds: 3_000_000_000)
             // DECODE THE DATA TO BE ABLE TO MAKE SENSE OF IT IN JSON
             if let decodedResponse = try? JSONDecoder().decode([HypeStock].self, from: data) {
                 print(decodedResponse)
+                
+                DispatchQueue.main.async {
+                    self.firstStock = decodedResponse.first!
+                }
             }
         }
         catch {

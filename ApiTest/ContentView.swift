@@ -11,6 +11,8 @@ struct ContentView: View {
     
     @StateObject private var apiManager = ApiManager()
     
+    @State private var count = 0
+    
     var body: some View {
         VStack {
             Button("Tap for data") {
@@ -18,6 +20,12 @@ struct ContentView: View {
                     await apiManager.getData()
                 }
             }
+            
+            Button("Count: \(count)") {
+                count += 1
+            }
+            
+            Text("\(apiManager.firstStock?.ticker ?? "no stock")")
         }
         .padding()
     }
